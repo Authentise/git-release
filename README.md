@@ -1,7 +1,7 @@
 Git-Releaseit
 ==========
 
-`git-releaseis` adds a git command which will smartly auto-increment git release tags.  It currently only supports tags following the `major.minor` convension.
+`git-releaseit` adds a git command which will smartly auto-increment git release tags.  It currently only supports tags following the `major.minor` convension.
 
 Getting Started
 ===============
