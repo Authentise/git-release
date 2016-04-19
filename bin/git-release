@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+
+import subprocess
+from git_release import release
+
+def main():
+    parser = argparse.ArgumentParser(description='Smartly tag your release.')
+    parser.add_argument('-s', '--signed', action='store_true', help='This will sign your tag with gpg, otherwise it will just annotate the tag.')
+    parser.add_argument('release_type', choices=['major', 'minor'], help='The release type.')
+    args = parser.parse_args()
+
+    release.release(args.release_type, args.signed)
+
+if __name__ == '__main__':
+    main()
