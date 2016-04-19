@@ -27,3 +27,4 @@ def release(release_type, signed):
     new_tag = _increment_tag(tag, release_type)
 
     git_helpers.tag(signed, new_tag)
+    print("Successfully tagged with version: {}".format(new_tag))

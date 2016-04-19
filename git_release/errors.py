@@ -3,3 +3,6 @@ class NotMasterException(Exception):
 
 class NoTagException(Exception):
     pass
+
+class FailedToTag(Exception):
+    pass

@@ -1,4 +1,5 @@
 import subprocess
+from git_release import errors
 
 def _get_output_or_none(args):
     try:
@@ -17,4 +18,6 @@ def tag(signed, new_tag):
     signing_arg = '-a'
     if signed:
         signing_arg = '-s'
-    subprocess.call(['git', 'tag', signing_arg, new_tag])
+    exit_code = subprocess.call(['git', 'tag', signing_arg, new_tag])
+    if exit_code != 0:
+        raise errors.FailedToTag("git tag returned a failing exit_code")
