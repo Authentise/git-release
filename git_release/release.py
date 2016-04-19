@@ -24,6 +24,6 @@ def release(release_type, signed):
     if not tag:
         raise errors.NoTagException("Unable to get current tag.\nAborting.")
 
-    new_tag = _increment_tag(tag)
+    new_tag = _increment_tag(tag, release_type)
 
     git_helpers.tag(signed, new_tag)
