@@ -89,7 +89,7 @@ class CustomSDistCommand(sdist): # pylint: disable=no-init
 
 def main():
     setup(
-        name                 = "git-release",
+        name                 = "git-releaseit",
         version              = get_version(),
         description          = "The git release command for auto-incrementing git tags for releases",
         url                  = "https://github.com/Authentise/git-release",
