@@ -1,15 +1,15 @@
-Git-Release
+Git-Releaseit
 ==========
 
-`git-release` is a git command which will smartly auto-increment git release tags.  It currently only supports tags following the major.minor convension.
+`git-releaseis` adds a git command which will smartly auto-increment git release tags.  It currently only supports tags following the `major.minor` convension.
 
 Getting Started
 ===============
 
-You can get started with `git-release` by using PIP:
+You can get started with `git-releaseit` by using PIP:
 
 ```
-pip install git-release
+pip install git-releaseit
 ```
 
 This can be done in a virtual environment or at the system level.  
