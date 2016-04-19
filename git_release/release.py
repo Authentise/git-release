@@ -28,3 +28,4 @@ def release(release_type, signed):
 
     git_helpers.tag(signed, new_tag)
     print("Successfully tagged with version: {}".format(new_tag))
+    print('Run "git push origin {}" to finish releasing your new tag.'.format(new_tag))
